@@ -1,0 +1,52 @@
+{
+  "name": "ro-http",
+  "version": "1.5.3",
+  "description": "Roblox HttpService Network Emulator & Inspector - Simulate Roblox server and executor network fingerprints",
+  "main": "ro-http.js",
+  "bin": {
+    "ro-http": "./ro-http.js"
+  },
+  "scripts": {
+    "start": "node ro-http.js",
+    "test": "node ro-http.js https://httpbin.org/get",
+    "scan": "node ro-http.js https://httpbin.org/get --scan",
+    "fingerprint": "node ro-http.js --fingerprint -p standard",
+    "help": "node ro-http.js --help",
+    "tutorial": "node ro-http.js -hh"
+  },
+  "keywords": [
+    "roblox",
+    "httpservice",
+    "http",
+    "network",
+    "emulator",
+    "fingerprint",
+    "ja3",
+    "tls",
+    "security",
+    "exploit",
+    "executor",
+    "synapse-x",
+    "krnl",
+    "delta"
+  ],
+  "author": "MxhytzCorp",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "ro-http.js",
+    "README.md",
+    "LICENSE",
+    "examples/",
+    "wordlists/"
+  ],
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dns": "^0.2.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0"
+  }
+}
